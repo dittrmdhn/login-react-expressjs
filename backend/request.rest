@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYyLCJuYW1lIjoicmFkaXQiLCJlbWFpbCI6InR5YUBnbWFpbC5jb20iLCJpYXQiOjE2NzkyMzY5ODIsImV4cCI6MTY3OTMyMzM4Mn0.T5_E1ezwT21fOIyU1Htb2mphrczZKibCANsm4DhVaSI
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Joko tingkir",
+    "email": "joko@gmail.com",
+    "password": "123321",
+    "confPassword": "123321"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "tya@gmail.com",
+    "password": "asd"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
